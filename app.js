@@ -2,8 +2,8 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const cacheControl = require('express-cache-controller');
-const routes = require('./api/routes');
 const swaggerUi = require('swagger-ui-express');
+const routes = require('./api/routes');
 const swaggerDocument = require('./swagger.json');
 
 const app = express();
