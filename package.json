@@ -11,7 +11,7 @@
     "e2e-dev": "API_ENV=dev jest --rootDir ./tests/e2e ",
     "e2e": "API_ENV=prod jest --rootDir ./tests/e2e ",
     "local": "npm run docker:start && npm run local:api",
-    "local:api": "DB_PORT=3002 DB_HOST='127.0.0.1' NODE_ENV=development node app.js",
+    "local:api": "DB_PORT=3002 DB_HOST='127.0.0.1' NODE_ENV=development nodemon app.js",
     "postinstall": "npm run test && npm run graphql",
     "start": "pm2 start process.json",
     "test": "eslint .",
